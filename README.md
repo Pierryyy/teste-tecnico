@@ -7,7 +7,7 @@ Esta aplicação tem como objetivo o rastreamento de entregas feitas por transpo
 ## Tecnologias Utilizadas
 
 - **Backend:** Laravel 8
-- **Frontend:** Blade, Tailwind CSS
+- **Frontend:** Blade, Sweetalert2 Tailwind CSS
 - **Banco de Dados:** MySQL
 - **Autenticação:** Laravel Auth
 - **Filtragem de Dados:** Filtros dinâmicos baseados em parâmetros enviados via POST
