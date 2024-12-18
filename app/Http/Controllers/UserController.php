@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Services\UserService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth; 
-use Illuminate\Support\Facades\Hash; 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -38,8 +38,7 @@ class UserController extends Controller
         ]);
 
         if (Auth::attempt($data)) {
-            // Se a autenticação for bem-sucedida, redirecionar para a dashboard ou a página desejada
-            return redirect()->intended('/home')->with('success', 'Bem-vindo de volta!');
+            return redirect()->intended('/entregas')->with('success', 'Bem-vindo de volta!');
         }
 
         return back()->withErrors([
